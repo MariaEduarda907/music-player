@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #92d3ff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.music-player{
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #d69ffa;
+}
+
+.circle{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #ab1aff33;
+}
+
+#back-btn, #menu-btn{
+    font-size: 1rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.cover{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ffdfef;
+    box-shadow: 0 10px 60px #ab1aff33;
+}
+
+.song-title{
+    font-size: 1.2rem;
+    color: #1b1b1b;
+    font-weight: 400;
+}
+
+.singer-name{
+    font-size: 0.9rem;
+    color: #1b1b1b;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#progress-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background-color: #cdacf3;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+#progress-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: url("https://img.icons8.com/office/30/pixel-star.png");
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 0;
+}
+
+audio{
+    display: none;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.controls img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#shuffle-btn{
+    width: 30px;
+    height: 30px;
+}
+
+.controls img:hover{
+    transform: scale(1.2);
+}
+
+.controls img:active{
+    transform: scale(0.9);
+}
+
+.controls img:enabled{
+    filter: drop-shadow(0 5px 10px #ab1aff33);
+}
+
+footer{
+    text-align: center;
+    margin-top: 2rem;
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(104, 178, 238);
+}
