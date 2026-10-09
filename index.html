@@ -7,6 +7,7 @@
     <meta name="keywords" content="To-Do, Lista de Tarefas, Produtividade">
     <meta name="author" content="Maria Eduarda">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/assets/" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Music Player</title>
 </head>
@@ -28,7 +29,7 @@
                 <p class="singer-name">Melanie Martinez</p>
 
                 <audio controls id="song">
-                    <source src="./src/assets/drama-club.mp3" type="audio/mpeg">
+                    <source src="./src/assets/Drama Club.mp3" type="audio/mpeg">
                 </audio>
                 <input type="range" value="0" id="progress-bar" class="progress-bar">
 
@@ -37,7 +38,7 @@
                         <img src="./src/assets/icons8-rewind-40.png" alt="" id="backward-btn">
                     </div>
                     <div>
-                        <img src="./src/assets/icons8-pause-40.png" alt="" id="play-pause-btn">
+                        <img src="./src/assets/icons8-reproduzir-40.png" alt="" class="play" id="play-pause-btn" onclick="togglePlayPause()">
                     </div>
                     <div>
                         <img src="./src/assets/icons8-fast-forward-40.png" alt=""  id="forward-btn">
